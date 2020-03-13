@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHICH DO YOU PREFER?"
+        android:textColor="#000"
+        android:shadowColor="#3e0909"
+        android:layout_marginBottom="30dp"
+        android:textSize="45sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/cocacola"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/coca"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/display_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocacola"
+            android:gravity="center"
+            android:text="Vote"
+            android:layout_alignParentLeft="true"
+            android:background="#b71f1f"
+            android:onClick="voteUdacicola"
+            android:textColor="#fff"
+            android:layout_marginLeft="35dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pepsi"
+            android:id="@+id/pepsi"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/display_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pepsi"
+            android:gravity="center"
+            android:text="Vote"
+            android:layout_alignParentRight="true"
+            android:background="#285fbf"
+            android:textColor="#fff"
+            android:onClick="votePepcity"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
